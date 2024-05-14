@@ -82,7 +82,12 @@ button{
     width: 10%;
     background: none;
     color: white;
-    
+    transition: all 0.5s ease;
+}
+
+button:hover{
+    transform: translateY(10%);
+    background-color: rgb(75, 75, 255);
 }
 
 .rect2{
@@ -435,53 +440,64 @@ button{
 .rect9{
     width: 100%;
     height: 100vh;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    grid-template-areas: 
+         'branch world'
+         'appoint appoint';
     justify-content: center;
+    align-items: center;
+    gap: 10px;
     background: rgb(7, 2, 20);
 
 }
 
 .branch{
-    width: 40%;
-    height: 25%;
+    width: 50vw;
+    height: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 10%;
     align-items: center;
     gap: 10px;
+    grid-area: branch;
 }
 
 .world{
-    width: 40%;
-    height: 25%;
+    width: 50vw;
+    height: 25vh;
     margin-top: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    grid-area: world;
 }
 
 .rect10{
     width: 100%;
-    height: 130vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
     background: rgb(240, 238, 238);
 }
 
 .appointment{
-    width: 60%;
-    height: 90vh;
+    width: 80vw;
+    height: 95vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     background: white;
-    transition: all ease 0.9s;
+    margin-top: 20vh;
+    margin-left: 10vw;
+    grid-area: appoint;
 }
-.appointment
+
 
 .contact{
     width: 30%;
@@ -525,7 +541,7 @@ button{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 15%;   
+    margin-top: 40%;   
 }
 
 .consult2{
@@ -561,6 +577,11 @@ button{
     align-items: center;
     justify-content: center;
     gap: 20px;
+}
+.touch{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .lastp{

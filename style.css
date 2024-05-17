@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    background: hsl(226, 43%, 10%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    height: 50%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        'card1 card2 card3 card4'
+        'card1 card5 card6 card7';
+    gap: 15px;
+}
+.card1{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background: hsl(235, 46%, 20%);
+    grid-area: card1;
+}
+.topcard1{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    background: hsl(246, 80%, 60%);
+    border-radius: 10px;
+}
+.pic{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.bottomcard1{
+    background: hsl(235, 46%, 20%);
+    height: 40%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+p{
+    margin-top: 15px;
+    margin-left: 15px;
+    color: white;
+}
+.card2{
+    height: 25vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    grid-area: card2;
+}
+.topcard2{
+    height: 20%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.bottomcard2{
+    border-radius: 10px;
+    height: 80%;
+    background: hsl(235, 46%, 20%);
+}
+
+.card3{
+    height: 25vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    grid-area: card3;
+}
+.topcard3{
+    height: 20%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.bottomcard3{
+    border-radius: 10px;
+    height: 80%;
+    background: hsl(235, 46%, 20%);
+}
+
+.card4{
+    height: 25vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    grid-area: card4;
+}
+.topcard4{
+    height: 20%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.bottomcard4{
+    border-radius: 10px;
+    height: 80%;
+    background: hsl(235, 46%, 20%);
+}
+
+.card5{
+    height: 25vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    grid-area: card5;
+}
+.topcard5{
+    height: 20%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.bottomcard5{
+    border-radius: 10px;
+    height: 80%;
+    background: hsl(235, 46%, 20%);
+}
+
+.card6{
+    height: 25vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    grid-area: card6;
+}
+.topcard6{
+    height: 20%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.bottomcard6{
+    border-radius: 10px;
+    height: 80%;
+    background: hsl(235, 46%, 20%);
+}
+
+.card7{
+    height: 25vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    grid-area: card7;
+}
+.topcard7{
+    height: 20%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.bottomcard7{
+    border-radius: 10px;
+    height: 80%;
+    background: hsl(235, 46%, 20%);
+}
